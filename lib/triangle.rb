@@ -29,6 +29,10 @@ class Triangle
     end
   end
   
+  
+class Triangle::TriangleError
+end
+  
 class TriangleError < StandardError
 end
   
