@@ -30,7 +30,6 @@ class Triangle
   end
   
   
-end 
     
   
 equilateral = Triangle.new(2, 2, 2).kind
