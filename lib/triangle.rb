@@ -15,7 +15,7 @@ class Triangle
      sum(x + y) > z || sum(y + z) > x || sum(z + x) > y
      return true 
     
-     elsif equilateral.all.detect {|x| x = y && y = z && x = z|}
+     #elsif equilateral.all.detect {|x| x = y && y = z && x = z|}
 #       self.equilateral
   
 #     elsif 
