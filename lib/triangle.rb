@@ -27,8 +27,8 @@ class Triangle
 #     scalene.all.detect {|x| x > y && y > z && x > z}
 #     self.scalene
     
-#   end
-# end
+  end
+ end
  
 # if x < 0 && y < 0 && z < 0  
 #     raise TriangleError
