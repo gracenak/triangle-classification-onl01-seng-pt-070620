@@ -19,7 +19,7 @@ attr_accessor :equilateral, :isosceles, :scalene
       else
         
       if self.size <= 0 
-        raise TriangleError
+        raise RangeError
        
         elsif (@side_1 + @side_2) < @side_3 || (@side_2 + @side_3) < @side_1 || (@side_3 + @side_1) < @side_2
         raise TriangleError
