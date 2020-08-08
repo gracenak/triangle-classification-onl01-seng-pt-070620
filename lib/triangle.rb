@@ -29,13 +29,6 @@ class Triangle
     end
   end
   
-  
-
-  
 class TriangleError < StandardError
 end
   
-    
-  
-equilateral = Triangle.new(2, 2, 2).kind
-equilateral = Triangle.new(10,10,10).kind
