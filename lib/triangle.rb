@@ -27,6 +27,7 @@ attr_accessor :equilateral, :isosceles, :scalene
         end
       end
     end
+    
 class TriangleError < StandardError
   end
 end
