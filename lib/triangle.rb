@@ -3,26 +3,26 @@ class Triangle
   
   attr_accessor :equilateral, :isosceles, :scalene
   
-  def initialize(x, y, z)
-    @x = x
-    @y = y
-    @z = z
+  def initialize(@side_1, @side_2, @side_3)
+    @side_1 = side_1
+    @side_2 = side_2
+    @side_3 = side_3
   end
   
   def kind
-    if x <= 0 && y <= 0 && z <= 0
+    if @side_1 <= 0 && @side_2 <= 0 && @side_3 <= 0
       raise TriangleError
        
-      elsif (x + y) < z || (y + z) < x || (z + x) < y
+      elsif (@side_1 + @side_2) < @side_3 || (@side_2 + @side_3) < @side_1 || (@side_3 + @side_1) < @side_2
         raise TriangleError
         
       else
         
-        if x == y && y == z
+        if @side_1 == @side_2 && @side_2 == @side_3
           :equilateral
-        elsif x == y || y == z || x == z 
+        elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_1 == @side_3 
           :isosceles
-        elsif x != y && y != z && z != x
+        elsif @side_1 != @side_2 && @side_2 != @side_3 && @side_3 != @side_1
           :scalene
         end
       end
