@@ -16,6 +16,13 @@ class Triangle
        
       elsif sum(@side_1 + @side_2) < @side_3 || sum(@side_2 + @side_3) < @side_1 || sum(@side_3 + @side_1) < @side_2
       raise TriangleError
+     end
+     
+      if @side_1 == @side_2 && @side_2 == @side_3 
+        :equilateral
+      elsif @side_1 < @side_2 && @side_1 == @side_3
+        :isosceles
+      elsif @side_1 > @side_2 && @side_2 > @@side_3 && @side_3 > @side_1
       
     
      #elsif equilateral.all.detect {|x| x = y && y = z && x = z|}
