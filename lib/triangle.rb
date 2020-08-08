@@ -3,15 +3,18 @@ class Triangle
   
   attr_accessor :equilateral, :isosceles, :scalene
   
-  def initialize(x, y, z)
-    @x = x
-    @y = y
-    @z = z
+  def initialize(side_1, side_2, side_3)
+    @side_1 = side_1
+    @side_2 = side_2
+    @side_3 = side_3
   end
   
   def kind
-    binding.pry
-     if x > 0 && y > 0 && y > 0
+    
+     if side_1 > 0 && side_2 > 0 && side_3 > 0
+       raise TriangleError
+       
+      elsif sum(side_1 + side_2) > side_3 or 
      sum(x + y) > z || sum(y + z) > x || sum(z + x) > y
      return true 
     
