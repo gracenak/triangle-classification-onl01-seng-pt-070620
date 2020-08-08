@@ -10,19 +10,19 @@ class Triangle
   end
   
   def kind
-    if @x <= 0 && @y <= 0 && @z <= 0
+    if x <= 0 && y <= 0 && z <= 0
       raise TriangleError
        
-      elsif (@x + @y) < @z || (@side_2 + @side_3) < @side_1 || (@side_3 + @side_1) < @side_2
+      elsif (x + y) < z || (y + z) < x || (z + x) < y
         raise TriangleError
         
       else
         
-        if @side_1 == @side_2 && @side_2 == @side_3 
+        if x == y && y == z
           :equilateral
-        elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_1 == @side_3 
+        elsif x == y || y == z || x == z 
           :isosceles
-        elsif @side_1 != @side_2 && @side_2 != @side_3 && @side_3 != @side_1
+        elsif x != y && y != z && z != x
           :scalene
         end
       end
