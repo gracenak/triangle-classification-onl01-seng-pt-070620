@@ -16,13 +16,15 @@ class Triangle
       elsif (@side_1 + @side_2) < @side_3 || (@side_2 + @side_3) < @side_1 || (@side_3 + @side_1) < @side_2
         raise TriangleError
         
-    
-      elsif @side_1 == @side_2 && @side_2 == @side_3 
-        :equilateral
-      elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_1 == @side_3 
-        :isosceles
-      elsif @side_1 != @side_2 && @side_2 != @side_3 && @side_3 != @side_1
-        :scalene
+      else
+        
+        elsif @side_1 == @side_2 && @side_2 == @side_3 
+          :equilateral
+        elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_1 == @side_3 
+          :isosceles
+        elsif @side_1 != @side_2 && @side_2 != @side_3 && @side_3 != @side_1
+          :scalene
+        end
       end
     end
   end
