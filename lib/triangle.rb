@@ -1,3 +1,4 @@
+require_relative '../lib/triangle'
 require 'pry'
 class Triangle
   
