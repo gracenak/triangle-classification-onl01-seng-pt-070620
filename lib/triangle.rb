@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   
   attr_accessor :equilateral, :isosceles, :scalene
@@ -9,11 +10,12 @@ class Triangle
   end
   
   def kind
-#   if  x > 0 && y > 0 && z > 0
-#     sum(x + y) > z || sum(y + z) > x || sum(z + x) > y
-#     return true 
+    binding.pry
+   if  x > 0 && y > 0 && z > 0
+     sum(x + y) > z || sum(y + z) > x || sum(z + x) > y
+     return true 
     
-#     elsif equilateral.all.detect {|x| x = y && y = z && x = z|}
+     elsif equilateral.all.detect {|x| x = y && y = z && x = z|}
 #       self.equilateral
   
 #     elsif 
