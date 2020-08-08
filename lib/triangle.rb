@@ -1,5 +1,4 @@
 require_relative '../lib/triangle'
-require 'pry'
 class Triangle
   
 attr_accessor :equilateral, :isosceles, :scalene
