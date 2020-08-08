@@ -18,7 +18,7 @@ attr_accessor :equilateral, :isosceles, :scalene
         :scalene
       else
         
-      if self.triangle.size == false 
+      if self.size <= 0 
         raise TriangleError
        
         elsif (@side_1 + @side_2) < @side_3 || (@side_2 + @side_3) < @side_1 || (@side_3 + @side_1) < @side_2
