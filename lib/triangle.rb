@@ -11,9 +11,9 @@ class Triangle
   
   def kind
     binding.pry
-    # if side_1 > 0 && side_2 > 0 && side_3 > 0
-    # sum(x + y) > z || sum(y + z) > x || sum(z + x) > y
-    # return true 
+     if x > 0 && y > 0 && y > 0
+     sum(x + y) > z || sum(y + z) > x || sum(z + x) > y
+     return true 
     
      #elsif equilateral.all.detect {|x| x = y && y = z && x = z|}
 #       self.equilateral
