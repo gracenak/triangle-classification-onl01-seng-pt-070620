@@ -3,17 +3,17 @@ class Triangle
   
   attr_accessor :equilateral, :isosceles, :scalene
   
-  def initialize(side_1, side_2, side_3)
-    @side_1 = side_1
-    @side_2 = side_2
-    @side_3 = side_3
+  def initialize(x, y, z)
+    @x = x
+    @y = y
+    @z = z
   end
   
   def kind
-    if @side_1 <= 0 && @side_2 <= 0 && @side_3 <= 0
+    if @x <= 0 && @y <= 0 && @z <= 0
       raise TriangleError
        
-      elsif (@side_1 + @side_2) < @side_3 || (@side_2 + @side_3) < @side_1 || (@side_3 + @side_1) < @side_2
+      elsif (@x + @y) < @z || (@side_2 + @side_3) < @side_1 || (@side_3 + @side_1) < @side_2
         raise TriangleError
         
       else
