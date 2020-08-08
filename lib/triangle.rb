@@ -26,7 +26,7 @@ class Triangle
 #     elsif
 #     scalene.all.detect {|x| x > y && y > z && x > z}
 #     self.scalene
-    
+  end
   end
  end
  
